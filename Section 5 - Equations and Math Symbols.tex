@@ -1,5 +1,8 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
 
 \title{Equations and Math Symbols}
 \author{Victoria Chama}
@@ -61,6 +64,28 @@
 	78 & 2 & 2 
 	\end{bmatrix}
 	\]
+	
+	\section{Working With Algorithms}
+	In this section of the tutorials we look at hoew to format algorithms using LaTex. See Algorithm~\ref{algorithm_1} below:
+	
+	\begin{algorithm}[htbp]
+		\caption{This is our Sample Algorithm}
+		\label{algorithm_1}
+	\begin{algorithmic}
+		\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+		\renewcommand{\algorithmicensure}{\textbf{Output:}}
+		\ENSURE The Corresponding
+		\REQUIRE Information Table
+		\IF {$ a \geq 5$}
+			\STATE The Value is greater than Five.
+			
+		\ELSE
+			\WHILE {a != 5}
+				\STATE A is not equal to Five
+			\ENDWHILE
+		\ENDIF 	
+	\end{algorithmic}
+	\end{algorithm}
 	
 	
 \end{document}
