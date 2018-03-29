@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Equations and Math Symbols}
+\author{Victoria Chama}
+
+\begin{document}
+	\maketitle
+	
+	\section{First Equations - Inline}
+	
+	This equation is inline $b = 5*4$.
+	This equation is also inline $b = 5^4$.
+	
+	\section{With Floating Environment}
+	
+
+	\begin{equation}
+	\label{first_equation}
+	\alpha \,\, \leq  \,\, \beta \,\, \geq \,\, \rightarrow \,\, \text{ To add space at the begining and at the end of the document } \,\, \cup 
+	\end{equation}
+	
+	
+		% So if you do not want the equation number to be added for you use the \begin{equation*} environment which can be used by added the package amsamath
+	\begin{equation*}
+	5*4 = 20
+	\end{equation*}
+	
+	This is the reference to the equation in the Text. See Equation ~\ref{first_equation}
+	
+\end{document}
