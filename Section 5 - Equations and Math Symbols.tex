@@ -16,7 +16,7 @@
 	
 
 	\begin{equation}
-	\label{first_equation}
+	\label{equation_1}
 	\alpha \,\, \leq  \,\, \beta \,\, \geq \,\, \rightarrow \,\, \text{ To add space at the begining and at the end of the document } \,\, \cup 
 	\end{equation}
 	
@@ -26,6 +26,18 @@
 	5*4 = 20
 	\end{equation*}
 	
-	This is the reference to the equation in the Text. See Equation ~\ref{first_equation}
+	This is the reference to the equation in the Text. See Equation ~\ref{equation_1}
+	
+	\section{Adding Multiple Arrays}
+	Sometimes you want to add multiple arrays using one environment because they are similar. to do that use the begin{eqnarray} environment
+	 
+	\begin{eqnarray}
+	\label{equation_2}
+	5 + 5= 10 \\ 
+	\label{equation_3}
+	7 + 2 + 70 &= 867
+	\end{eqnarray}
+	
+	This is Equation ~\ref{equation_2} and this is equation ~\ref{equation_3}. To reinforce alignment you can also use the AND sign and LaTex will try its best to realign based on the position of the AND symbol. You can also use 2 AND signs to add more reinforcement. 
 	
 \end{document}
